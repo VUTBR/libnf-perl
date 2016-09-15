@@ -1,0 +1,3 @@
+[submodule "libnf"]
+	path = libnf
+	url = https://github.com/VUTBR/libnf.git
