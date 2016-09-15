@@ -62,9 +62,9 @@ sub MY::postamble {
 .NOTPARALLEL:
 
 libnf/configure: 
-		# if there is svn checkout preffer direct 
-		# connection to the libnf source isn svn 
-		if [ -d ../../c ] ; then ln -f -s ../../c libnf && (cd libnf && ./prepare-nfdump.sh && cd ..) ; fi 
+		# if there is github checkout preffer direct 
+		# connection to the libnf source in github via submodule
+		if [ -d libnf/nfdump ] ; then (cd libnf && ./prepare-nfdump.sh && cd ..) ; fi 
 		# else decompress libnf tar and link 
 		(tar xzf libnf-$(VERSION).tar.gz && ln -s libnf-$(VERSION) libnf) || exit 0;
 		$(RM_F) libnf/nfdump/bin/nfdump  
