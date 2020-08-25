@@ -2,11 +2,7 @@
 
 Perl API form manipulating with nfdump files (http://nfdump.sourceforge.net/). 
 
----
-**NOTE**
-
-This code is now part of [libnf](https://github.com/netx-as/libnf) maintained by NetX Networks 
----
+> **NOTE:** This code is now part of [libnf](https://github.com/netx-as/libnf) maintained by NetX Networks 
 
 ### INSTALLATION
 
